@@ -35,7 +35,7 @@ export default (props: Props) => {
               <Show when={props.canEdit()} fallback={<IconEnv />}>
                 <span onClick={() => props.setCurrentSystemRoleSettings('')} class="sys-edit-btn p-1 rd-50%" > <IconX /> </span>
               </Show>
-              <span>System Role ( Temp = {temperature()} ) : </span>
+              <span>系统角色（温度 = {temperature()}）：</span>
             </div>
             <div class="mt-1">
               {props.currentSystemRoleSettings()}
@@ -45,7 +45,7 @@ export default (props: Props) => {
         <Show when={!props.currentSystemRoleSettings() && props.canEdit()}>
           <span onClick={() => props.setSystemRoleEditing(!props.systemRoleEditing())} class="sys-edit-btn">
             <IconEnv />
-            <span>Add System Role</span>
+            <span>添加系统角色</span>
           </span>
         </Show>
       </Show>
@@ -53,13 +53,13 @@ export default (props: Props) => {
         <div>
           <div class="fi gap-1 op-50 dark:op-60">
             <IconEnv />
-            <span>System Role:</span>
+            <span>系统角色：</span>
           </div>
-          <p class="my-2 leading-normal text-sm op-50 dark:op-60">Gently instruct the assistant and set the behavior of the assistant.</p>
+          <p class="my-2 leading-normal text-sm op-50 dark:op-60">用简短的说明设定助手的身份与行为。</p>
           <div>
             <textarea
               ref={systemInputRef!}
-              placeholder="You are a helpful assistant, answer as concisely as possible...."
+              placeholder="你是一个乐于助人的助手，请尽可能简洁地回答……"
               autocomplete="off"
               autofocus
               rows="3"
@@ -68,12 +68,12 @@ export default (props: Props) => {
           </div>
           <div class="w-full fi fb">
             <button onClick={handleButtonClick} gen-slate-btn>
-              Set
+              设定
             </button>
             <div class="w-full ml-2">
               <SettingsSlider
                 settings={{
-                  name: 'Temperature',
+                  name: '温度',
                   type: 'slider',
                   min: 0,
                   max: 2,

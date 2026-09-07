@@ -1,18 +1,18 @@
-<!-- DO NOT IGNORE THE TEMPLATE!
-Thank you for contributing!
-Before submitting the PR, please make sure you do the following:
-- Discuss first. It's always better to open a feature request issue first to discuss with the maintainers whether the feature is desired and the design of those features.
-- Use [Conventional Commits](https://www.conventionalcommits.org/) for commit messages.
-- Check that there isn't already a PR that solves the problem the same way to avoid creating a duplicate.
+<!-- 请勿忽略此模板！
+感谢你的贡献！
+提交 PR 前，请确认已完成以下事项：
+- 先讨论。建议先提交功能建议 Issue，与维护者确认该功能是否需要以及设计方案。
+- 提交信息请使用 [Conventional Commits](https://www.conventionalcommits.org/)。
+- 检查是否已有以相同方式解决问题的 PR，避免重复提交。
 -->
 
-### Description
+### 说明
 
-<!-- Please insert your description here and provide especially info about the "what" this PR is solving -->
+<!-- 请在此填写说明，尤其是本 PR 解决了什么问题 -->
 
-### Linked Issues
+### 关联 Issue
 
 
-### Additional context
+### 补充说明
 
-<!-- e.g. is there anything you'd like reviewers to focus on? -->
+<!-- 例如：希望评审者重点关注哪些内容？ -->
