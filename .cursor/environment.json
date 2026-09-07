@@ -1,0 +1,16 @@
+{
+  "name": "GeminiProChat",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": ".cursor"
+  },
+  "user": "node",
+  "install": "pnpm install --frozen-lockfile",
+  "terminals": [
+    {
+      "name": "dev-server",
+      "command": "pnpm run dev"
+    }
+  ],
+  "ports": [3000]
+}
