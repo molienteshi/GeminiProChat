@@ -41,7 +41,7 @@ export const Slider = (selectProps: Props) => {
   return (
     <div {...api().rootProps}>
       <div class="text-xs op-50 fb items-center">
-        <span>Temperature</span>
+        <span>温度</span>
         <output {...api().outputProps}>{formatSliderValue(api().value)}</output>
       </div>
       <div class="mt-2" {...api().controlProps}>
