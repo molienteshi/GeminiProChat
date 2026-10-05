@@ -1,6 +1,6 @@
 # GeminiProChat
 
-[English](README.md) | 中文
+中文 | [English](README_en.md)
 
 与 Gemini Pro 聊天的最简 WebUI。
 

@@ -11,7 +11,7 @@ interface Props {
 
 const SettingsNotDefined = () => {
   return (
-    <div class="op-25">Not Defined</div>
+    <div class="op-25">未定义</div>
   )
 }
 

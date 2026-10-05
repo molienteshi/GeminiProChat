@@ -12,7 +12,7 @@ export const post: APIRoute = async(context) => {
   if (!messages || messages.length === 0 || messages[messages.length - 1].role !== 'user') {
     return new Response(JSON.stringify({
       error: {
-        message: 'Invalid message history: The last message must be from user role.',
+        message: '无效的消息历史：最后一条消息必须来自用户。',
       },
     }), { status: 400 })
   }
@@ -20,7 +20,7 @@ export const post: APIRoute = async(context) => {
   if (sitePassword && !(sitePassword === pass || passList.includes(pass))) {
     return new Response(JSON.stringify({
       error: {
-        message: 'Invalid password.',
+        message: '密码错误。',
       },
     }), { status: 401 })
   }
@@ -28,7 +28,7 @@ export const post: APIRoute = async(context) => {
   if (import.meta.env.PROD && !await verifySignature({ t: time, m: messages[messages.length - 1].parts.map(part => part.text).join('') }, sign)) {
     return new Response(JSON.stringify({
       error: {
-        message: 'Invalid signature.',
+        message: '签名无效。',
       },
     }), { status: 401 })
   }

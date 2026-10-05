@@ -9,7 +9,7 @@ const { title } = Astro.props;
 ---
 
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover">
@@ -19,7 +19,7 @@ const { title } = Astro.props;
     <meta name="theme-color" content="#212129">
     <meta name="generator" content={Astro.generator}>
     <title>{title}</title>
-    <meta name="description" content="A Minimal web UI for GeminiPro Chat.">
+    <meta name="description" content="Gemini Pro 聊天的极简 Web 界面。">
     { import.meta.env.HEAD_SCRIPTS && <Fragment set:html={import.meta.env.HEAD_SCRIPTS } /> }
     { pwaInfo && <Fragment set:html={pwaInfo.webManifest.linkTag} /> }
     { import.meta.env.PROD && pwaInfo && <Fragment set:html={pwaInfo.registerSW.scriptTag} /> }

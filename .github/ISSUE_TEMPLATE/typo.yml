@@ -1,15 +1,15 @@
-name: 👀 Typo / Grammar fix
-description: You can just go ahead and send a PR! Thank you!
+name: 👀 错别字 / 语法修正
+description: 可以直接提交 PR，非常感谢！
 labels: []
 body:
   - type: markdown
     attributes:
       value: |
-        ## PR Welcome!
+        ## 欢迎提交 PR！
 
-        If the typo / grammar issue is trivial and straightforward, you can help by **directly sending a quick pull request**!
-        If you spot multiple of them, we suggest combining them into a single PR. Thanks!
+        如果错别字或语法问题简单明确，欢迎**直接提交快速 Pull Request**！
+        如果发现多处问题，建议合并到同一个 PR。谢谢！
   - type: textarea
     id: context
     attributes:
-      label: Additional context
+      label: 补充说明
